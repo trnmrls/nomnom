@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1042480519463",
+    "project_id": "nomnom-917bc",
+    "storage_bucket": "nomnom-917bc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042480519463:android:f29243021474f658b33102",
+        "android_client_info": {
+          "package_name": "com.example.nomnom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQKG3NiLw0lfa6liaEIJUHU7ES4xWSOW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
