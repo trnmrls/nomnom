@@ -15,8 +15,13 @@
         android:theme="@style/Theme.Nomnom"> //andito yung theme
         <activity
             android:name=".LoginActivity"
-            android:exported="true"
+            android:exported="false"
             android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.Nomnom.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
