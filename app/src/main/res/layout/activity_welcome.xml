@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFF9F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- NOMNOM LOGO IMAGE -->
+        <ImageView
+            android:id="@+id/nomnomLogo"
+            android:layout_width="97dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Nomnom Logo"
+            android:scaleType="fitStart"
+            android:src="@drawable/nomnom_logo" />
+
+        <!-- CUSTOMIZABLE FOOD PHOTO -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/welcomeImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/welcome_food"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_image"
+                android:clipToOutline="true"
+                android:contentDescription="Welcome food photo"/>
+
+            <!-- CHANGE PHOTO BUTTON -->
+            <ImageButton
+                android:id="@+id/changePhotoButton"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_card"
+                android:src="@android:drawable/ic_menu_camera"
+                android:padding="10dp"
+                android:contentDescription="Change photo"/>
+
+        </FrameLayout>
+
+        <!-- WELCOME HEADING -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to nomnom"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="#40352F"
+            android:layout_marginTop="22dp"/>
+
+        <!-- WELCOME DESCRIPTION -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your cozy food journal for everyday bites and unforgettable meals. A little place to savor it all."
+            android:textSize="14sp"
+            android:textColor="#8D8178"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- FEATURE CARDS ROW 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <!-- CARD 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@drawable/rounded_card">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="♡ Save delicious moments"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#473A33"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Capture what you ate, how it tasted, and how it made you feel."
+                    android:textSize="12sp"
+                    android:textColor="#81766C"
+                    android:layout_marginTop="12dp"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="1dp"/>
+
+            <!-- CARD 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@drawable/rounded_green">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="♡ Rediscover your favorites"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#473A33"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Keep your favorite dishes and hidden gems close to your heart."
+                    android:textSize="12sp"
+                    android:textColor="#81766C"
+                    android:layout_marginTop="12dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- FEATURE CARDS ROW 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:layout_marginTop="12dp">
+
+            <!-- CARD 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@drawable/rounded_yellow">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="✦ Find your food story"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#473A33"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Explore your habits and the little patterns on your plate."
+                    android:textSize="12sp"
+                    android:textColor="#81766C"
+                    android:layout_marginTop="12dp"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="1dp"/>
+
+            <!-- CARD 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@drawable/rounded_pink">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="♡ Remember every bite"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#473A33"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Turn everyday meals into memories worth keeping."
+                    android:textSize="12sp"
+                    android:textColor="#81766C"
+                    android:layout_marginTop="12dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- START JOURNALING BUTTON -->
+        <Button
+            android:id="@+id/startJournalingButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="22dp"
+            android:text="Start Journaling →"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#E98C74"/>
+
+        <!-- FOOTER MESSAGE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Every meal has a story. Let's start yours."
+            android:textSize="12sp"
+            android:textColor="#A59A90"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
