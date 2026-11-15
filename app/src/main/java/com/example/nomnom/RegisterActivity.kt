@@ -82,8 +82,8 @@ class RegisterActivity : AppCompatActivity() {
                             db.collection("users").document(user.uid)
                                 .set(userMap)
                                 .addOnSuccessListener {
-                                    startActivity(Intent(this, MainActivity::class.java))
-                                    finishAffinity()
+                                    startActivity(Intent(this, WelcomeActivity::class.java))
+                                    finish()
                                 }
                                 .addOnFailureListener { e ->
                                     Toast.makeText(baseContext, "Failed to save user data: ${e.message}", Toast.LENGTH_LONG).show()
