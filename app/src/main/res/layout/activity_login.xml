@@ -154,15 +154,12 @@
                     android:background="@null"
                     android:hint="Enter your password"
                     android:inputType="textPassword"
+                    android:drawableEnd="@drawable/ic_visibility_off"
+                    android:drawablePadding="12dp"
                     android:textColor="#2C2B29"
                     android:textColorHint="#9D988F"
                     android:textSize="14sp" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="8dp"
-                    android:src="@drawable/ic_visibility_off" />
             </LinearLayout>
 
             <!-- Remember me / Forgot password -->

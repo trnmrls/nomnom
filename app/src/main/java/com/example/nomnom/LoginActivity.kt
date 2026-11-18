@@ -80,13 +80,13 @@ fun EditText.setupPasswordVisibilityToggle() {
                         // Hide Password
                         this.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
                         this.setCompoundDrawablesWithIntrinsicBounds(
-                            R.drawable.ic_lock, 0, R.drawable.ic_visibility_off, 0
+                            0, 0, R.drawable.ic_visibility_off, 0
                         )
                     } else {
                         // Show Password
                         this.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
                         this.setCompoundDrawablesWithIntrinsicBounds(
-                            R.drawable.ic_lock, 0, R.drawable.ic_visibility, 0 // Use your open eye icon here
+                            0, 0, R.drawable.ic_visibility, 0
                         )
                     }
 
