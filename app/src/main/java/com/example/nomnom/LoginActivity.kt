@@ -28,8 +28,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         findViewById<LinearLayout>(R.id.llCreateAccount)?.setOnClickListener {
-            startActivity(Intent(this, WelcomeActivity::class.java))
-            finish()
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
 
         val etEmail = findViewById<EditText>(R.id.etEmail)

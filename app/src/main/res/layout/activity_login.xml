@@ -230,16 +230,6 @@
 
             <!-- Divider -->
 
-            <!-- Social Buttons -->
-            <LinearLayout
-                android:id="@+id/llSocial"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:baselineAligned="false"
-                android:orientation="horizontal"
-                tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="518dp" />
-
             <LinearLayout
                 android:id="@+id/llCreateAccount"
                 android:layout_width="wrap_content"
@@ -259,7 +249,7 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:text="Create an account"
                     android:textColor="#C24F3A"
                     android:textSize="12sp"
