@@ -223,15 +223,12 @@
                     android:background="@null"
                     android:hint="Create a password"
                     android:inputType="textPassword"
+                    android:drawableEnd="@drawable/ic_visibility_off"
+                    android:drawablePadding="12dp"
                     android:textColor="#2C2B29"
                     android:textColorHint="#9D988F"
                     android:textSize="14sp" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="8dp"
-                    android:src="@drawable/ic_visibility_off" />
             </LinearLayout>
 
             <LinearLayout
@@ -332,15 +329,12 @@
                     android:background="@null"
                     android:hint="Re-enter your password"
                     android:inputType="textPassword"
+                    android:drawableEnd="@drawable/ic_visibility_off"
+                    android:drawablePadding="12dp"
                     android:textColor="#2C2B29"
                     android:textColorHint="#9D988F"
                     android:textSize="14sp" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="8dp"
-                    android:src="@drawable/ic_visibility_off" />
             </LinearLayout>
 
             <!-- Terms -->
@@ -398,29 +392,15 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <!-- Divider -->
-
-            <!-- Social Buttons -->
-            <LinearLayout
-                android:id="@+id/llSocial"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:baselineAligned="false"
-                android:orientation="horizontal"
-                tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="753dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
-
             <LinearLayout
                 android:id="@+id/llLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
+                android:layout_gravity="center_horizontal"
                 android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/llSocial">
+                app:layout_constraintEnd_toEndOf="parent">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -435,7 +415,10 @@
                     android:text="Log in"
                     android:textColor="#C24F3A"
                     android:textSize="12sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/btnLogin"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

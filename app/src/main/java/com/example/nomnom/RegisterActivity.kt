@@ -2,6 +2,9 @@ package com.example.nomnom
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.Toast
@@ -39,6 +42,28 @@ class RegisterActivity : AppCompatActivity() {
         val etConfirmPassword = findViewById<EditText>(R.id.etConfirmPassword)
         val btnCreateAccount = findViewById<LinearLayout>(R.id.btnCreateAccount)
 
+        val cbLength = findViewById<CheckBox>(R.id.cbLength)
+        val cbLowercase = findViewById<CheckBox>(R.id.cbLowercase)
+        val cbUppercase = findViewById<CheckBox>(R.id.cbUppercase)
+        val cbNumber = findViewById<CheckBox>(R.id.cbNumber)
+        val cbSymbol = findViewById<CheckBox>(R.id.cbSymbol)
+
+        etPassword.setupPasswordVisibilityToggle()
+        etConfirmPassword.setupPasswordVisibilityToggle()
+
+        etPassword.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+            override fun afterTextChanged(s: Editable?) {
+                val p = s.toString()
+                cbLength.isChecked = p.length >= 8
+                cbLowercase.isChecked = p.any { it.isLowerCase() }
+                cbUppercase.isChecked = p.any { it.isUpperCase() }
+                cbNumber.isChecked = p.any { it.isDigit() }
+                cbSymbol.isChecked = p.any { !it.isLetterOrDigit() }
+            }
+        })
+
         btnCreateAccount.setOnClickListener {
             val username = etUsername.text.toString()
             val email = etEmail.text.toString()
@@ -55,8 +80,8 @@ class RegisterActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            if (password.length < 8) {
-                Toast.makeText(this, "Password must be at least 8 characters", Toast.LENGTH_SHORT).show()
+            if (!cbLength.isChecked || !cbLowercase.isChecked || !cbUppercase.isChecked || !cbNumber.isChecked || !cbSymbol.isChecked) {
+                Toast.makeText(this, "Please meet all password requirements", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
