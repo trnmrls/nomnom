@@ -6,8 +6,8 @@
     android:background="@color/background">
 
     <ImageView
-        android:layout_width="236dp"
-        android:layout_height="76dp"
+        android:layout_width="191dp"
+        android:layout_height="36dp"
         android:layout_centerInParent="true"
         android:scaleType="centerCrop"
         android:src="@drawable/logo" />
