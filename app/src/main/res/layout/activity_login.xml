@@ -254,16 +254,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="New to nomnom? "
-                    android:textColor="@color/text_light"
-                    android:textSize="12sp"/>
+                    android:textColor="#898782"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Create an account"
-                    android:textColor="@color/brand_orange"
-                    android:textStyle="bold"
-                    android:textSize="12sp"/>
+                    android:textColor="#C24F3A"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
