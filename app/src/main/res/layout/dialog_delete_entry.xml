@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/delete_dialog_bg">
+
+    <!-- DELETE ICON -->
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@android:drawable/ic_menu_delete"
+        android:padding="12dp"
+        android:background="@drawable/rounded_card"
+        android:contentDescription="Delete icon"/>
+
+    <!-- TITLE -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Delete food entry?"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:gravity="center"/>
+
+    <!-- DESCRIPTION -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="This entry, including its photo and notes, will be permanently deleted. This can't be undone."
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"/>
+
+    <!-- DELETE BUTTON -->
+    <Button
+        android:id="@+id/confirmDeleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:text="Delete entry"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/primary_dark"/>
+
+    <!-- CANCEL BUTTON -->
+    <Button
+        android:id="@+id/cancelDeleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:text="Keep entry"
+        android:textAllCaps="false"
+        android:textColor="@color/text_primary"
+        android:backgroundTint="@color/card_peach"/>
+
+</LinearLayout>
