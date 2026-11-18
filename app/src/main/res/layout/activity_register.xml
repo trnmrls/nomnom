@@ -408,7 +408,9 @@
                 android:baselineAligned="false"
                 android:orientation="horizontal"
                 tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="753dp" />
+                tools:layout_editor_absoluteY="753dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
 
             <LinearLayout
                 android:id="@+id/llLogin"
